@@ -211,7 +211,7 @@ end
 function BulletList(items)
   local buffer = {}
   for _, item in pairs(items) do
-    table.insert(buffer, "*" .. sub_list(item))
+    table.insert(buffer, "* " .. sub_list(item))
   end
   return table.concat(buffer, "\n")
 end
@@ -219,7 +219,7 @@ end
 function OrderedList(items)
   local buffer = {}
   for _, item in pairs(items) do
-    table.insert(buffer, "#" .. sub_list(item))
+    table.insert(buffer, "# " .. sub_list(item))
   end
   return table.concat(buffer, "\n")
 end
