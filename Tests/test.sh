@@ -1,0 +1,1 @@
+pandoc  -f markdown -t tikiwiki.lua Tests/test.md
